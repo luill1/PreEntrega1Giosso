@@ -1,14 +1,13 @@
-import React from 'react'
-import { ChakraProvider } from '@chakra-ui/react'
-import NavBar from './components/NavBar/NavBar'
-import ItemListContainer from './components/ItemListContainer/ItemListContainer'
+import React from "react";
+import { ChakraProvider } from "@chakra-ui/react";
+import { MainRouter } from "./routes";
 
 function App() {
   return (
     <ChakraProvider>
-      <NavBar/>
-      <ItemListContainer greeting="VIVERO JARDIN Y ARTE"/>
+      <MainRouter />
     </ChakraProvider>
-  )
+  );
 }
+
 export default App;
