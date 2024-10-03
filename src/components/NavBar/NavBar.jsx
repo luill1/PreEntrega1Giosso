@@ -16,7 +16,8 @@ import {
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { CartWidget } from "../CartWidget";
 import { Link } from "react-router-dom";
-import { useCategory } from "../../Hooks/useCategory";
+import { useCategory } from "../../hooks";
+import { createProductsFirestore } from "../../helpers";
 
 export const NavBar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -89,4 +90,3 @@ export const NavBar = () => {
     </>
   );
 };
-

@@ -15,6 +15,7 @@ import { color } from "framer-motion";
 import { Link } from "react-router-dom";
 
 export const ItemListContainer = ({ products }) => {
+  
   return (
     <Box
       marginTop={24}
